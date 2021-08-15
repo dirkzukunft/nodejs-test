@@ -7,7 +7,7 @@ app.use(express.json());
 app.use(helmet());
 
 app.get('/', (req, res) => {
-  res.send(`Hello, the server is running and data is ${JSON.stringify(req.query)}`);
+  res.send(`Hello, the server v2 is running and data is ${JSON.stringify(req.query)}`);
 });
 
 app.get('/test', (req, res) => {
