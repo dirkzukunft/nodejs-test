@@ -1,8 +1,10 @@
 import express from 'express';
+import helmet from 'helmet';
 
 const port = 3000;
 const app = express();
 app.use(express.json());
+app.use(helmet());
 
 app.get('/', (req, res) => {
   res.send(`Hello, the server is running and data is ${JSON.stringify(req.query)}`);
