@@ -3,7 +3,7 @@ dotenv.config();
 import express from 'express';
 import helmet from 'helmet';
 
-const port = process.env.MONGODB_PORT || 3000;
+const port = process.env.EXPRESS_PORT || 3000;
 const app = express();
 app.use(express.json());
 app.use(helmet());
