@@ -1,5 +1,7 @@
 import express from 'express';
 import helmet from 'helmet';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const port = 3000;
 const app = express();
